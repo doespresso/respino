@@ -26,7 +26,9 @@ return array(
 	|
 	*/
 
-	'default' => 'mysql',
+//	'default' => 'mysql',
+	'default' => 'mongodb_mongolab',
+//	'default' => 'mysql_firms',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -87,10 +89,28 @@ return array(
             'driver'   => 'mongodb',
             'host'     => 'localhost',
             'port'     => 27017,
-            'username' => 'admin',
-            'password' => 'admin',
+            'username' => '',
+            'password' => '',
             'database' => 'test'
         ),
+
+        'mongodb_mongolab' => array(
+            'driver'   => 'mongodb',
+            'host'     => 'ds033459.mongolab.com',
+            'port'     => 33459,
+            'username' => 'inodin_loc',
+            'password' => 'inodin_loc',
+            'database' => 'test'
+        ),
+        'mysql_firms' => array(
+  			'driver'   => 'mysql',
+  			'host'     => '146.185.131.173',
+  			'database' => 'firms',
+  			'username' => 'remote_firms',
+  			'password' => '2remrem2959',
+            'charset'   => 'utf8',
+         	'collation' => 'utf8_unicode_ci',
+  		),
 
 	),
 
